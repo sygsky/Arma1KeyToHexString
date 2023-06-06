@@ -11,8 +11,8 @@ public class Main {
     public static final String KEY_HEX = "\"KEY\"=hex:";
 
     public static void main( String[] args ) throws Exception {
-        System.out.println( "Arma-1 licence key to hexadecimal string converter, see \"https://github.com/ValveSoftware/Proton/issues/767\"!" );
-        String keyArma = "60Z1-XB663-SKRWL-CA7DC-J44HH";
+        System.out.println( "Arma-1 license key to hexadecimal string converter, see \"https://github.com/ValveSoftware/Proton/issues/767\"!" );
+        String keyArma = "7DV5-F15X7-GZSY5-MWD8D-3ALTX";
         byte[] keyByte = getByteKey( keyArma );
         String keyHex = getHexKey( keyByte );
         System.out.printf( "+++ Arma key: %s%n", keyArma );
@@ -23,8 +23,8 @@ public class Main {
         System.out.printf( "+++ %s%n", reg );
         keyArma = registryToSerial( reg );
         System.out.printf( "+++ Key restored from registry: %s%n", keyArma );
-        keyArma = registryToSerial( "\"KEY\"=hex:1d,0c,70,e4,22,1d,3f,a9,6c,0a,13,20,c9,e2,0f" );
-        System.out.printf( "+++ My Arma-1 rey restored from registry: %s%n", keyArma );
+//        keyArma = registryToSerial( "\"KEY\"=hex:1d,0c,70,e4,22,1d,3f,a9,6c,0a,13,20,c9,e2,0f" );
+//        System.out.printf( "+++ My Arma-1 rey restored from registry: %s%n", keyArma );
     }
 
     private static final String szTemplate = "0123456789ABCDEFGHJKLMNPRSTVWXYZ";
